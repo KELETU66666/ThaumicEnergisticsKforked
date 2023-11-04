@@ -1,0 +1,13 @@
+/*
+!/.gitignore
+!/ChangeLog*.txt
+!/Features.md
+!/LICENSE
+!/README.md
+!/src
+!build.gradle
+!gradle.properties
+!gradlew
+!gradlew.bat
+!gradle
+*.psd
