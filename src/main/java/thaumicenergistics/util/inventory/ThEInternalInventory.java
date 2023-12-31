@@ -1,8 +1,5 @@
 package thaumicenergistics.util.inventory;
 
-import java.util.Collections;
-import java.util.Iterator;
-
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
@@ -11,8 +8,10 @@ import net.minecraft.nbt.NBTTagList;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentString;
-
 import net.minecraftforge.common.util.INBTSerializable;
+
+import java.util.Collections;
+import java.util.Iterator;
 
 /**
  * Manages an internal inventory

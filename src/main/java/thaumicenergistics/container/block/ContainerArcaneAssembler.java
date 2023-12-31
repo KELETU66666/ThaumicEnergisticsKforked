@@ -22,7 +22,6 @@ import thaumicenergistics.container.slot.SlotUpgrade;
 import thaumicenergistics.item.ItemKnowledgeCore;
 import thaumicenergistics.item.ItemMaterial;
 import thaumicenergistics.network.PacketHandler;
-import thaumicenergistics.network.packets.PacketAssemblerGUIUpdate;
 import thaumicenergistics.network.packets.PacketPlaySound;
 import thaumicenergistics.tile.TileArcaneAssembler;
 import thaumicenergistics.util.ForgeUtil;

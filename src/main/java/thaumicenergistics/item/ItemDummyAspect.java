@@ -5,15 +5,12 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.NonNullList;
-
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-
 import thaumcraft.api.aspects.Aspect;
-
-import thaumicenergistics.client.render.DummyAspectRenderer;
 import thaumicenergistics.client.model.IThEModel;
+import thaumicenergistics.client.render.DummyAspectRenderer;
 import thaumicenergistics.init.ModGlobals;
 
 /**

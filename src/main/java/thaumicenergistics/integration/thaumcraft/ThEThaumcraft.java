@@ -1,22 +1,14 @@
 package thaumicenergistics.integration.thaumcraft;
 
+import appeng.api.AEApi;
 import com.google.common.base.Preconditions;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.ResourceLocation;
-
 import net.minecraftforge.common.crafting.CraftingHelper;
 import net.minecraftforge.registries.IForgeRegistryEntry;
-
-import appeng.api.AEApi;
-
 import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
@@ -29,13 +21,9 @@ import thaumcraft.api.items.ItemsTC;
 import thaumcraft.api.research.ResearchCategories;
 import thaumcraft.api.research.ScanningManager;
 import thaumcraft.api.research.theorycraft.TheorycraftManager;
-
 import thaumicenergistics.ThaumicEnergisticsApi;
 import thaumicenergistics.api.ThEApi;
-import thaumicenergistics.block.BlockGearBox;
-import thaumicenergistics.block.BlockGolemGearBox;
 import thaumicenergistics.init.ModGlobals;
-import thaumicenergistics.init.ThEBlocks;
 import thaumicenergistics.integration.IThEIntegration;
 import thaumicenergistics.integration.thaumcraft.research.AidMEController;
 import thaumicenergistics.integration.thaumcraft.research.AidMEDrive;
@@ -44,6 +32,10 @@ import thaumicenergistics.integration.thaumcraft.research.ScanMod;
 import thaumicenergistics.util.ForgeUtil;
 import thaumicenergistics.util.TCUtil;
 import thaumicenergistics.util.ThELog;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author BrockWS

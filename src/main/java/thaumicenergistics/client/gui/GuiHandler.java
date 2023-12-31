@@ -1,18 +1,13 @@
 package thaumicenergistics.client.gui;
 
-import javax.annotation.Nullable;
-
+import appeng.api.parts.IPart;
+import appeng.api.parts.IPartHost;
+import appeng.api.util.AEPartLocation;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-
 import net.minecraftforge.fml.common.network.IGuiHandler;
-
-import appeng.api.parts.IPart;
-import appeng.api.parts.IPartHost;
-import appeng.api.util.AEPartLocation;
-
 import thaumicenergistics.ThaumicEnergistics;
 import thaumicenergistics.client.gui.block.GuiArcaneAssembler;
 import thaumicenergistics.client.gui.crafting.GuiCraftAmountBridge;
@@ -29,6 +24,8 @@ import thaumicenergistics.container.part.*;
 import thaumicenergistics.init.ModGUIs;
 import thaumicenergistics.part.*;
 import thaumicenergistics.tile.TileArcaneAssembler;
+
+import javax.annotation.Nullable;
 
 /**
  * @author BrockWS

@@ -9,7 +9,6 @@ import appeng.client.gui.widgets.GuiTabButton;
 import appeng.core.localization.GuiText;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.util.ResourceLocation;
-
 import thaumicenergistics.api.ThEApi;
 import thaumicenergistics.container.part.ContainerEssentiaStorageBus;
 import thaumicenergistics.init.ModGUIs;

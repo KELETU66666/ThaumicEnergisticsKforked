@@ -1,15 +1,13 @@
 package thaumicenergistics.upgrade;
 
+import appeng.api.definitions.IItemDefinition;
+import net.minecraft.item.ItemStack;
+import thaumicenergistics.api.IThEUpgrade;
+import thaumicenergistics.util.ForgeUtil;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Stream;
-
-import net.minecraft.item.ItemStack;
-
-import appeng.api.definitions.IItemDefinition;
-
-import thaumicenergistics.api.IThEUpgrade;
-import thaumicenergistics.util.ForgeUtil;
 
 /**
  * @author BrockWS

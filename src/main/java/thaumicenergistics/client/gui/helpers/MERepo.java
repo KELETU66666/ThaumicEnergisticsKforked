@@ -1,12 +1,5 @@
 package thaumicenergistics.client.gui.helpers;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.regex.Pattern;
-import java.util.regex.PatternSyntaxException;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
-
 import appeng.api.config.SearchBoxMode;
 import appeng.api.config.SortDir;
 import appeng.api.config.SortOrder;
@@ -17,17 +10,22 @@ import appeng.api.storage.data.IAEItemStack;
 import appeng.api.storage.data.IAEStack;
 import appeng.api.storage.data.IItemList;
 import appeng.util.Platform;
-
 import invtweaks.api.InvTweaksAPI;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
-
 import thaumicenergistics.api.ThEApi;
 import thaumicenergistics.api.config.PrefixSetting;
 import thaumicenergistics.integration.invtweaks.ThEInvTweaks;
 import thaumicenergistics.integration.jei.ThEJEI;
 import thaumicenergistics.util.AEUtil;
 import thaumicenergistics.util.TCUtil;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Pattern;
+import java.util.regex.PatternSyntaxException;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 /**
  * Based on ItemRepo and FluidRepo

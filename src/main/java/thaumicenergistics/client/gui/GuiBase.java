@@ -1,15 +1,13 @@
 package thaumicenergistics.client.gui;
 
-import net.minecraft.client.gui.GuiTextField;
-import org.lwjgl.opengl.GL11;
-
-import java.awt.Color;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Stream;
-
+import appeng.api.config.Settings;
+import appeng.api.util.IConfigManager;
+import appeng.api.util.IConfigurableObject;
+import appeng.client.gui.widgets.GuiImgButton;
+import appeng.client.gui.widgets.ITooltip;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
+import net.minecraft.client.gui.GuiTextField;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.BufferBuilder;
 import net.minecraft.client.renderer.GlStateManager;
@@ -19,13 +17,7 @@ import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.TextFormatting;
-
-import appeng.api.config.Settings;
-import appeng.api.util.IConfigManager;
-import appeng.api.util.IConfigurableObject;
-import appeng.client.gui.widgets.GuiImgButton;
-import appeng.client.gui.widgets.ITooltip;
-
+import org.lwjgl.opengl.GL11;
 import thaumicenergistics.api.storage.IAEEssentiaStack;
 import thaumicenergistics.client.gui.helpers.GenericStackSizeRenderer;
 import thaumicenergistics.client.gui.helpers.GuiScrollBar;
@@ -34,6 +26,11 @@ import thaumicenergistics.container.slot.ISlotOptional;
 import thaumicenergistics.container.slot.SlotGhostEssentia;
 import thaumicenergistics.container.slot.SlotME;
 import thaumicenergistics.container.slot.ThESlot;
+
+import java.awt.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
 
 /**
  * @author BrockWS

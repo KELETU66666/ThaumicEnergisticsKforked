@@ -1,21 +1,18 @@
 package thaumicenergistics.container.part;
 
+import appeng.api.config.Upgrades;
+import appeng.api.implementations.items.IUpgradeModule;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-
 import net.minecraftforge.items.IItemHandler;
-
-import appeng.api.config.Upgrades;
-import appeng.api.implementations.items.IUpgradeModule;
-
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.IEssentiaContainerItem;
-import thaumicenergistics.container.IPartContainer;
 import thaumicenergistics.container.ContainerBaseConfigurable;
+import thaumicenergistics.container.IPartContainer;
 import thaumicenergistics.container.slot.SlotGhost;
 import thaumicenergistics.container.slot.SlotGhostEssentia;
 import thaumicenergistics.container.slot.SlotUpgrade;

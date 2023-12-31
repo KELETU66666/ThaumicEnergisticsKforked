@@ -1,12 +1,22 @@
 package thaumicenergistics.part;
 
-import java.util.List;
-import java.util.Random;
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-
+import appeng.api.AEApi;
 import appeng.api.config.Settings;
+import appeng.api.config.Upgrades;
+import appeng.api.implementations.IPowerChannelState;
+import appeng.api.implementations.IUpgradeableHost;
+import appeng.api.networking.IGridNode;
 import appeng.api.networking.events.MENetworkBootingStatusChange;
+import appeng.api.networking.events.MENetworkEventSubscribe;
+import appeng.api.networking.events.MENetworkPowerStatusChange;
+import appeng.api.networking.security.IActionHost;
+import appeng.api.networking.security.IActionSource;
+import appeng.api.parts.*;
+import appeng.api.util.AECableType;
+import appeng.api.util.AEPartLocation;
+import appeng.api.util.DimensionalCoord;
+import appeng.me.GridAccessException;
+import io.netty.buffer.ByteBuf;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -21,24 +31,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-
 import net.minecraftforge.items.IItemHandler;
-
-import appeng.api.AEApi;
-import appeng.api.config.Upgrades;
-import appeng.api.implementations.IPowerChannelState;
-import appeng.api.implementations.IUpgradeableHost;
-import appeng.api.networking.IGridNode;
-import appeng.api.networking.events.MENetworkEventSubscribe;
-import appeng.api.networking.events.MENetworkPowerStatusChange;
-import appeng.api.networking.security.IActionHost;
-import appeng.api.networking.security.IActionSource;
-import appeng.api.parts.*;
-import appeng.api.util.AECableType;
-import appeng.api.util.AEPartLocation;
-import appeng.api.util.DimensionalCoord;
-import appeng.me.GridAccessException;
-
 import thaumicenergistics.config.AESettings;
 import thaumicenergistics.integration.appeng.grid.GridUtil;
 import thaumicenergistics.integration.appeng.grid.IThEGridHost;
@@ -50,9 +43,12 @@ import thaumicenergistics.util.ForgeUtil;
 import thaumicenergistics.util.IThEGridNodeBlock;
 import thaumicenergistics.util.IThEOwnable;
 import thaumicenergistics.util.ItemHandlerUtil;
-
-import io.netty.buffer.ByteBuf;
 import thaumicenergistics.util.inventory.IThEInvTile;
+
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+import java.util.List;
+import java.util.Random;
 
 /**
  * @author BrockWS

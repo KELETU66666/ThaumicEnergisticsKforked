@@ -1,16 +1,15 @@
 package thaumicenergistics.upgrade;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-
 import appeng.api.AEApi;
 import appeng.api.definitions.IItemDefinition;
 import net.minecraft.item.ItemStack;
-
 import thaumicenergistics.api.IThEItems;
 import thaumicenergistics.api.IThEUpgrade;
 import thaumicenergistics.api.IThEUpgrades;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 
 /**
  * @author BrockWS

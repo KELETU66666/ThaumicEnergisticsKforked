@@ -1,18 +1,15 @@
 package thaumicenergistics.item.part;
 
-import javax.annotation.Nullable;
-
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.item.ItemStack;
-
-import net.minecraftforge.client.model.ModelLoader;
-
 import appeng.api.AEApi;
 import appeng.api.parts.IPart;
-
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.client.model.ModelLoader;
 import thaumicenergistics.init.ModGlobals;
 import thaumicenergistics.item.ItemPartBase;
 import thaumicenergistics.part.PartArcaneTerminal;
+
+import javax.annotation.Nullable;
 
 /**
  * @author BrockWS

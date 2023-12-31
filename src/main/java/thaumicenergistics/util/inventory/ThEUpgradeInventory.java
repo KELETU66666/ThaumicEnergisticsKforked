@@ -1,20 +1,18 @@
 package thaumicenergistics.util.inventory;
 
+import appeng.api.config.Upgrades;
+import appeng.api.implementations.items.IUpgradeModule;
+import net.minecraft.item.ItemStack;
+import thaumicenergistics.api.IThEUpgrade;
+import thaumicenergistics.api.ThEApi;
+import thaumicenergistics.item.ItemKnowledgeCore;
+import thaumicenergistics.util.ForgeUtil;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Stream;
-
-import net.minecraft.item.ItemStack;
-
-import appeng.api.config.Upgrades;
-import appeng.api.implementations.items.IUpgradeModule;
-
-import thaumicenergistics.api.IThEUpgrade;
-import thaumicenergistics.api.ThEApi;
-import thaumicenergistics.item.ItemKnowledgeCore;
-import thaumicenergistics.util.ForgeUtil;
 
 /**
  * @author BrockWS

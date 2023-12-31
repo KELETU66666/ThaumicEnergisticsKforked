@@ -14,7 +14,7 @@ import thaumicenergistics.network.PacketHandler;
 import thaumicenergistics.network.packets.PacketAssemblerGUIUpdateRequest;
 import thaumicenergistics.network.packets.PacketSubscribe;
 
-import java.awt.Color;
+import java.awt.*;
 import java.util.HashMap;
 
 /**

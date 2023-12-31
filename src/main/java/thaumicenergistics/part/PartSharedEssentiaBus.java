@@ -1,25 +1,22 @@
 package thaumicenergistics.part;
 
+import appeng.api.AEApi;
 import appeng.api.config.RedstoneMode;
 import appeng.api.config.Settings;
+import appeng.api.config.Upgrades;
+import appeng.api.implementations.IUpgradeableHost;
 import appeng.api.networking.IGridNode;
+import appeng.api.networking.ticking.IGridTickable;
 import appeng.api.networking.ticking.TickRateModulation;
+import appeng.api.parts.PartItemStack;
+import appeng.api.util.AECableType;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.wrapper.InvWrapper;
-
-import appeng.api.AEApi;
-import appeng.api.config.Upgrades;
-import appeng.api.implementations.IUpgradeableHost;
-import appeng.api.networking.ticking.IGridTickable;
-import appeng.api.parts.PartItemStack;
-import appeng.api.util.AECableType;
-
 import thaumicenergistics.api.storage.IEssentiaStorageChannel;
 import thaumicenergistics.item.ItemPartBase;
 import thaumicenergistics.util.EssentiaFilter;

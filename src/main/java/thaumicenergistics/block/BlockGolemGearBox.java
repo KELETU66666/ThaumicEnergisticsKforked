@@ -4,7 +4,6 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
 import thaumicenergistics.client.model.IThEModel;
-import thaumicenergistics.init.ModGlobals;
 
 import java.util.Objects;
 

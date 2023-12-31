@@ -1,15 +1,13 @@
 package thaumicenergistics.util;
 
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraftforge.common.util.INBTSerializable;
+import thaumcraft.api.aspects.Aspect;
+import thaumcraft.api.aspects.IAspectContainer;
+
 import javax.annotation.Nonnull;
 import java.util.Arrays;
 import java.util.Iterator;
-
-import net.minecraft.nbt.NBTTagCompound;
-
-import net.minecraftforge.common.util.INBTSerializable;
-
-import thaumcraft.api.aspects.Aspect;
-import thaumcraft.api.aspects.IAspectContainer;
 
 /**
  * @author BrockWS

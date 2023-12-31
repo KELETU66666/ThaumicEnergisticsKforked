@@ -1,23 +1,15 @@
 package thaumicenergistics.init;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-
+import appeng.api.definitions.IBlockDefinition;
+import appeng.api.definitions.ITileDefinition;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.tileentity.TileEntity;
-
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-
-import appeng.api.definitions.IBlockDefinition;
-import appeng.api.definitions.ITileDefinition;
-
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import thaumicenergistics.api.IThEBlocks;
 import thaumicenergistics.block.*;
 import thaumicenergistics.client.model.IThEModel;
@@ -26,6 +18,10 @@ import thaumicenergistics.definitions.ThETileDefinition;
 import thaumicenergistics.tile.TileArcaneAssembler;
 import thaumicenergistics.tile.TileGearBox;
 import thaumicenergistics.tile.TileInfusionProvider;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 import static thaumicenergistics.ThaumicEnergistics.LOGGER;
 

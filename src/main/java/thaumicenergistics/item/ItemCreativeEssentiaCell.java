@@ -1,23 +1,20 @@
 package thaumicenergistics.item;
 
-import javax.annotation.Nullable;
-import java.util.List;
-
+import appeng.api.config.FuzzyMode;
+import appeng.api.storage.ICellWorkbenchItem;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.items.IItemHandler;
-
-import appeng.api.config.FuzzyMode;
-import appeng.api.storage.ICellWorkbenchItem;
-
 import thaumicenergistics.client.model.IThEModel;
 import thaumicenergistics.init.ModGlobals;
+
+import javax.annotation.Nullable;
+import java.util.List;
 
 /**
  * @author BrockWS

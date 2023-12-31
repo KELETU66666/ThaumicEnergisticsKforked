@@ -1,18 +1,15 @@
 package thaumicenergistics.util.inventory;
 
-import javax.annotation.Nonnull;
-
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-
 import net.minecraftforge.items.ItemStackHandler;
-
 import thaumcraft.api.aspects.AspectList;
 import thaumcraft.api.aspects.IEssentiaContainerItem;
-
 import thaumicenergistics.api.ThEApi;
 import thaumicenergistics.item.ItemDummyAspect;
 import thaumicenergistics.util.ThEUtil;
+
+import javax.annotation.Nonnull;
 
 /**
  * @author BrockWS

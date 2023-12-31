@@ -1,15 +1,14 @@
 package thaumicenergistics.util;
 
+import net.minecraft.inventory.Slot;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.items.IItemHandler;
+
+import javax.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
-import javax.annotation.Nonnull;
-
-import net.minecraft.inventory.Slot;
-import net.minecraft.item.ItemStack;
-
-import net.minecraftforge.items.IItemHandler;
 
 /**
  * @author BrockWS

@@ -1,14 +1,10 @@
 package thaumicenergistics.part;
 
-import javax.annotation.Nonnull;
-
+import appeng.api.parts.IPartModel;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.Vec3d;
-
-import appeng.api.parts.IPartModel;
-
 import thaumicenergistics.client.gui.GuiHandler;
 import thaumicenergistics.config.AESettings;
 import thaumicenergistics.init.ModGUIs;
@@ -17,6 +13,8 @@ import thaumicenergistics.integration.appeng.ThEPartModel;
 import thaumicenergistics.item.part.ItemEssentiaTerminal;
 import thaumicenergistics.util.AEUtil;
 import thaumicenergistics.util.ForgeUtil;
+
+import javax.annotation.Nonnull;
 
 /**
  * @author BrockWS

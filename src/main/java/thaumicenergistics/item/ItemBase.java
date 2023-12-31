@@ -1,7 +1,6 @@
 package thaumicenergistics.item;
 
 import net.minecraft.item.Item;
-
 import thaumicenergistics.init.ModGlobals;
 
 /**

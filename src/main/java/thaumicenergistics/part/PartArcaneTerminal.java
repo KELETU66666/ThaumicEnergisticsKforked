@@ -1,21 +1,15 @@
 package thaumicenergistics.part;
 
-import java.util.List;
-import javax.annotation.Nonnull;
-
+import appeng.api.parts.IPartModel;
+import appeng.api.parts.PartItemStack;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.Vec3d;
-
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.wrapper.InvWrapper;
-
-import appeng.api.parts.IPartModel;
-import appeng.api.parts.PartItemStack;
-
 import thaumicenergistics.client.gui.GuiHandler;
 import thaumicenergistics.config.AESettings;
 import thaumicenergistics.init.ModGUIs;
@@ -27,6 +21,9 @@ import thaumicenergistics.util.ForgeUtil;
 import thaumicenergistics.util.ItemHandlerUtil;
 import thaumicenergistics.util.inventory.ThEInternalInventory;
 import thaumicenergistics.util.inventory.ThEUpgradeInventory;
+
+import javax.annotation.Nonnull;
+import java.util.List;
 
 /**
  * @author BrockWS

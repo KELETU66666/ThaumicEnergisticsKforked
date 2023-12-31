@@ -3,7 +3,6 @@ package thaumicenergistics.client.gui.part;
 import appeng.api.implementations.IPowerChannelState;
 import appeng.api.storage.IStorageChannel;
 import appeng.api.storage.data.IAEStack;
-
 import net.minecraft.inventory.Slot;
 import thaumicenergistics.client.gui.GuiConfigurable;
 import thaumicenergistics.client.gui.helpers.MERepo;

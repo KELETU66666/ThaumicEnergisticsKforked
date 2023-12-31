@@ -1,24 +1,8 @@
 package thaumicenergistics.part;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-import java.util.Collections;
-import java.util.List;
-
 import appeng.api.config.AccessRestriction;
 import appeng.api.config.Settings;
 import appeng.api.config.StorageFilter;
-import appeng.core.sync.GuiBridge;
-import appeng.helpers.IPriorityHost;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Vec3d;
-import net.minecraft.world.IBlockAccess;
-
 import appeng.api.networking.IGrid;
 import appeng.api.networking.IGridNode;
 import appeng.api.networking.events.MENetworkBootingStatusChange;
@@ -33,9 +17,17 @@ import appeng.api.parts.IPartCollisionHelper;
 import appeng.api.parts.IPartModel;
 import appeng.api.storage.*;
 import appeng.api.util.AECableType;
-
+import appeng.core.sync.GuiBridge;
+import appeng.helpers.IPriorityHost;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.EnumHand;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.world.IBlockAccess;
 import thaumcraft.api.aspects.IAspectContainer;
-
 import thaumicenergistics.api.ThEApi;
 import thaumicenergistics.api.storage.IAEEssentiaStack;
 import thaumicenergistics.client.gui.GuiHandler;
@@ -47,6 +39,11 @@ import thaumicenergistics.integration.appeng.grid.EssentiaContainerAdapter;
 import thaumicenergistics.item.part.ItemEssentiaStorageBus;
 import thaumicenergistics.util.AEUtil;
 import thaumicenergistics.util.ForgeUtil;
+
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * @author BrockWS

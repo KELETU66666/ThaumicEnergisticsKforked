@@ -1,23 +1,20 @@
 package thaumicenergistics.item;
 
 import com.google.common.base.Preconditions;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
+import net.minecraftforge.client.model.ModelLoader;
+import thaumicenergistics.api.IThEUpgrade;
+import thaumicenergistics.api.ThEApi;
+import thaumicenergistics.client.model.IThEModel;
+import thaumicenergistics.init.ModGlobals;
 
 import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
-
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.item.ItemStack;
-import net.minecraft.world.World;
-
-import net.minecraftforge.client.model.ModelLoader;
-
-import thaumicenergistics.api.IThEUpgrade;
-import thaumicenergistics.api.ThEApi;
-import thaumicenergistics.client.model.IThEModel;
-import thaumicenergistics.init.ModGlobals;
 
 /**
  * @author BrockWS

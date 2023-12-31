@@ -2,7 +2,6 @@ package thaumicenergistics.init;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
-
 import thaumicenergistics.api.ThEApi;
 
 /**

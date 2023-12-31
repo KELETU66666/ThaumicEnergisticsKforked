@@ -1,20 +1,16 @@
 package thaumicenergistics.network.packets;
 
-import java.util.concurrent.Future;
-
-import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.network.NetHandlerPlayServer;
-import net.minecraft.util.IThreadListener;
-
-import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
-import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
-import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
-
 import appeng.api.networking.IGridNode;
 import appeng.api.networking.crafting.ICraftingGrid;
 import appeng.api.networking.crafting.ICraftingJob;
 import appeng.me.GridAccessException;
-
+import io.netty.buffer.ByteBuf;
+import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.network.NetHandlerPlayServer;
+import net.minecraft.util.IThreadListener;
+import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
+import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
+import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
 import thaumicenergistics.client.gui.GuiHandler;
 import thaumicenergistics.container.crafting.ContainerCraftAmountBridge;
 import thaumicenergistics.container.crafting.ContainerCraftConfirmBridge;
@@ -23,7 +19,7 @@ import thaumicenergistics.integration.appeng.grid.GridUtil;
 import thaumicenergistics.integration.appeng.grid.IThEGridHost;
 import thaumicenergistics.part.PartBase;
 
-import io.netty.buffer.ByteBuf;
+import java.util.concurrent.Future;
 
 /**
  * @author BrockWS

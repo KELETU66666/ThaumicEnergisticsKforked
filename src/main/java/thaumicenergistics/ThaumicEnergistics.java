@@ -1,12 +1,7 @@
 package thaumicenergistics;
 
-import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
-import net.minecraftforge.client.ForgeHooksClient;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.ConfigManager;
@@ -21,16 +16,13 @@ import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
-
 import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
-import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.oredict.OreDictionary;
+import org.apache.logging.log4j.Logger;
 import thaumicenergistics.api.IThEBlocks;
 import thaumicenergistics.api.IThEItems;
 import thaumicenergistics.api.IThEUpgrades;
 import thaumicenergistics.api.ThEApi;
-import thaumicenergistics.block.BlockGearBox;
-import thaumicenergistics.block.BlockGolemGearBox;
 import thaumicenergistics.client.ThEItemColors;
 import thaumicenergistics.client.gui.GuiHandler;
 import thaumicenergistics.client.render.ArcaneAssemblerRenderer;
@@ -38,14 +30,11 @@ import thaumicenergistics.client.render.TileGearboxRender;
 import thaumicenergistics.command.CommandAddVis;
 import thaumicenergistics.command.CommandDrainVis;
 import thaumicenergistics.init.ModGlobals;
-import thaumicenergistics.init.ThEBlocks;
 import thaumicenergistics.integration.ThEIntegrationLoader;
 import thaumicenergistics.network.PacketHandler;
 import thaumicenergistics.tile.TileArcaneAssembler;
 import thaumicenergistics.tile.TileGearBox;
 import thaumicenergistics.util.ForgeUtil;
-
-import org.apache.logging.log4j.Logger;
 
 /**
  * <strong>Thaumic Energistics</strong>

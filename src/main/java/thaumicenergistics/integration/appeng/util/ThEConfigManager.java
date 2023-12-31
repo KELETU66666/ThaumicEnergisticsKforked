@@ -1,16 +1,14 @@
 package thaumicenergistics.integration.appeng.util;
 
-import java.util.EnumMap;
-import java.util.Map;
-import java.util.Set;
-
-import net.minecraft.nbt.NBTTagCompound;
-
 import appeng.api.config.Settings;
 import appeng.api.util.IConfigManager;
+import net.minecraft.nbt.NBTTagCompound;
 import thaumicenergistics.config.AESettings;
 
 import javax.annotation.Nullable;
+import java.util.EnumMap;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * @author BrockWS

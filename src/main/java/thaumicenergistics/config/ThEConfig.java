@@ -1,17 +1,15 @@
 package thaumicenergistics.config;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import appeng.api.config.SearchBoxMode;
+import appeng.api.config.TerminalStyle;
 import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.ConfigManager;
-
-import appeng.api.config.TerminalStyle;
-
 import thaumicenergistics.api.IThEConfig;
 import thaumicenergistics.api.config.PrefixSetting;
 import thaumicenergistics.init.ModGlobals;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import static net.minecraftforge.common.config.Config.Comment;
 import static net.minecraftforge.common.config.Config.Name;

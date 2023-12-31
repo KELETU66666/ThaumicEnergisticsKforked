@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.util.math.MathHelper;
 import thaumicenergistics.api.ThEApi;
 
-import java.awt.Color;
+import java.awt.*;
 
 /**
  * @author Alex811
