@@ -3,6 +3,7 @@ package thaumicenergistics.integration.thaumcraft;
 import appeng.api.AEApi;
 import com.google.common.base.Preconditions;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.item.crafting.Ingredient;
@@ -87,7 +88,7 @@ public class ThEThaumcraft implements IThEIntegration {
         ThEApi.instance().items().ironGear().maybeStack(1).ifPresent(stack ->
                 ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(ModGlobals.MOD_ID, "iron_gear"), new ShapedArcaneRecipe(
                         recipeGroup,
-                        "",
+                        "GEARBOX@1",
                         5,
                         new AspectList(),
                         stack,
@@ -99,7 +100,7 @@ public class ThEThaumcraft implements IThEIntegration {
                 )));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(ModGlobals.MOD_ID, "iron_gearbox"), new ShapedArcaneRecipe(
                 recipeGroup,
-                "",
+                "GEARBOX@1",
                 25,
                 new AspectList(),
                 ThaumicEnergisticsApi.instance().blocks().ironGearbox().maybeBlock().get(),
@@ -329,11 +330,23 @@ public class ThEThaumcraft implements IThEIntegration {
         });
         ThEApi.instance().blocks().thaumiumGearbox().maybeStack(1).ifPresent(box ->
             ThaumcraftApi.addCrucibleRecipe(new ResourceLocation(ModGlobals.MOD_ID, "thaumium_gearbox"), new CrucibleRecipe(
-                    "",
+                    "GEARBOX@2",
                     box,
                     ThEApi.instance().blocks().ironGearbox().maybeStack(1).get(),
                     new AspectList().add(Aspect.METAL, 16).add(Aspect.MAGIC, 16)))
         );
+        AEApi.instance().definitions().materials().certusQuartzCrystal().maybeStack(1).ifPresent(quartz ->
+                ThaumcraftApi.addCrucibleRecipe(new ResourceLocation(ModGlobals.MOD_ID, "certus_dupe"), new CrucibleRecipe(
+                        "BASEENERGISTICS",
+                        AEApi.instance().definitions().materials().certusQuartzCrystal().maybeStack(2).get(),
+                        quartz,
+                        new AspectList().add(Aspect.CRYSTAL, 5).add(Aspect.WATER, 2).add(Aspect.ENERGY, 2)))
+        );
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation(ModGlobals.MOD_ID, "quartz_dupe"), new CrucibleRecipe(
+                "BASEENERGISTICS",
+                new ItemStack(Items.QUARTZ, 2),
+                Items.QUARTZ,
+                new AspectList().add(Aspect.CRYSTAL, 5).add(Aspect.WATER, 2)));
 
         ThEApi.instance().items().blankKnowledgeCore().maybeItem().ifPresent(core ->
                 ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(ModGlobals.MOD_ID, "knowledge_core"), new ShapedArcaneRecipe(

@@ -34,7 +34,9 @@ import thaumicenergistics.integration.ThEIntegrationLoader;
 import thaumicenergistics.network.PacketHandler;
 import thaumicenergistics.tile.TileArcaneAssembler;
 import thaumicenergistics.tile.TileGearBox;
+import thaumicenergistics.util.AEAspectRegister;
 import thaumicenergistics.util.ForgeUtil;
+import thaumicenergistics.util.ThELog;
 
 /**
  * <strong>Thaumic Energistics</strong>
@@ -120,6 +122,13 @@ public class ThaumicEnergistics {
         proxy.postInit(event);
 
         ThEIntegrationLoader.postInit();
+
+        // Give AE items aspects
+        try {
+            AEAspectRegister.INSTANCE.registerAEAspects();
+        } catch (Exception e) {
+            ThELog.warn("Unable to finish aspect registration due to exception:%n%s%n", e.getMessage());
+        }
     }
 
     @Mod.EventHandler

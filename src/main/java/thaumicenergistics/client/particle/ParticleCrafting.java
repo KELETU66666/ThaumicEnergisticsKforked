@@ -11,7 +11,7 @@ import java.awt.*;
  */
 @SideOnly(Side.CLIENT)
 public class ParticleCrafting extends ThEParticle {
-    protected static final Color[] colors = { // (ﾉ´ヮ´)ﾉ
+    protected static final Color[] colors = { // emoji: happy face
             new Color(112, 239, 253),
             new Color(126, 150, 248),
             new Color(234, 162, 110),

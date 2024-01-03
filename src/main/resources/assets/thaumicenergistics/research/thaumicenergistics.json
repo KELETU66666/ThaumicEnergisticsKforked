@@ -20,7 +20,11 @@
             ],
             "stages": [
                 {
-                    "text": "research.base_energistics.stage.1"
+                    "text": "research.base_energistics.stage.1",
+                    "recipes": [
+                        "thaumicenergistics:quartz_dupe",
+                        "thaumicenergistics:certus_dupe"
+                    ]
                 }
             ]
         },
@@ -47,13 +51,6 @@
                     "text": "research.digisentia.stage.1",
                     "required_knowledge": [
                         "THEORY;THAUMICENERGISTICS;1"
-                    ],
-                    "required_item": [
-                        "appliedenergistics2:material;2;22",
-                        "appliedenergistics2:material;2;8",
-                        "appliedenergistics2:material;1;0",
-                        "minecraft:quartz",
-                        "thaumcraft:quicksilver;2"
                     ]
                 },
                 {
@@ -66,6 +63,52 @@
             ],
             "reward_knowledge": [
                 "OBSERVATION;THAUMICENERGISTICS;1"
+            ]
+        },
+        {
+            "key": "GEARBOX",
+            "name": "research.gearbox.title",
+            "icons": [
+                "thaumicenergistics:iron_gear"
+            ],
+            "category": "THAUMICENERGISTICS",
+            "location": [
+                -2,
+                3
+            ],
+            "meta": [
+                "ROUND"
+            ],
+            "parents": [
+                "BASEENERGISTICS"
+            ],
+            "stages": [
+                {
+                    "text": "research.gearbox.stage.1",
+                    "required_item": ["appliedenergistics2:material;1;40"],
+                    "required_knowledge": [
+                        "OBSERVATION;THAUMICENERGISTICS;1"
+                    ]
+                },
+                {
+                    "text": "research.gearbox.stage.2",
+                    "required_knowledge": [
+                        "THEORY;THAUMICENERGISTICS;1"
+                    ],
+                    "required_item": ["thaumcraft:mind;1;1"],
+                    "recipes": [
+                        "thaumicenergistics:iron_gear",
+                        "thaumicenergistics:iron_gearbox"
+                    ]
+                },
+                {
+                    "text": "research.gearbox.stage.3",
+                    "recipes": [
+                        "thaumicenergistics:iron_gear",
+                        "thaumicenergistics:iron_gearbox",
+                        "thaumicenergistics:thaumium_gearbox"
+                    ]
+                }
             ]
         },
         {
@@ -91,11 +134,6 @@
                     "text": "research.essentiastorage1k.stage.1",
                     "required_knowledge": [
                         "THEORY;THAUMICENERGISTICS;1"
-                    ],
-                    "required_item": [
-                        "thaumcraft:salis_mundus;4",
-                        "appliedenergistics2:material;4;0",
-                        "appliedenergistics2:material;1;22"
                     ]
                 },
                 {
@@ -133,12 +171,6 @@
                     "text": "research.essentiastorage4k.stage.1",
                     "required_knowledge": [
                         "THEORY;THAUMICENERGISTICS;1"
-                    ],
-                    "required_item": [
-                        "thaumcraft:salis_mundus;4",
-                        "thaumicenergistics:essentia_component_1k;3",
-                        "appliedenergistics2:quartz_glass",
-                        "appliedenergistics2:material;1;23"
                     ]
                 },
                 {
@@ -176,12 +208,6 @@
                     "text": "research.essentiastorage16k.stage.1",
                     "required_knowledge": [
                         "THEORY;THAUMICENERGISTICS;1"
-                    ],
-                    "required_item": [
-                        "thaumcraft:salis_mundus;4",
-                        "thaumicenergistics:essentia_component_4k;3",
-                        "appliedenergistics2:quartz_glass",
-                        "appliedenergistics2:material;1;24"
                     ]
                 },
                 {
@@ -219,12 +245,6 @@
                     "text": "research.essentiastorage64k.stage.1",
                     "required_knowledge": [
                         "THEORY;THAUMICENERGISTICS;2"
-                    ],
-                    "required_item": [
-                        "thaumcraft:salis_mundus;4",
-                        "thaumicenergistics:essentia_component_16k;3",
-                        "appliedenergistics2:quartz_glass",
-                        "appliedenergistics2:material;1;24"
                     ]
                 },
                 {
