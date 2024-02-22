@@ -1,6 +1,7 @@
 package thaumicenergistics.container.slot;
 
 import appeng.util.helpers.ItemHandlerUtil;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.InventoryBasic;
 import net.minecraft.item.ItemStack;
@@ -74,6 +75,11 @@ public class ThEGhostSlot extends SlotGhost {
     @SideOnly(Side.CLIENT)
     public boolean hasBackgroundIcon() {
         return this.getBackgroundIcon() != null && this.getBackgroundIconIndex() > -1;
+    }
+
+    @Override
+    public boolean canTakeStack(final EntityPlayer par1EntityPlayer) {
+        return false;
     }
 
     public void recalculateY(int slots) {
